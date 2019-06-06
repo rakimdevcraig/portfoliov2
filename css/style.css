@@ -11,6 +11,11 @@ body{
 a:hover { 
     color: #aa73ff;
   }
+
+img{
+    width: 480px;
+    height: 520px;
+}
 .intro{
     width: 100%;
     float: left
@@ -53,7 +58,7 @@ a:hover {
 
 .leftprojects{
     float:left;
-    width: 50%; 
+    width: 50%;
 }
 
 .rightprojects{
@@ -66,7 +71,7 @@ a:hover {
     text-decoration: none;
     font-weight: 500;
     font-size: 22px;
-    margin-left: 360px;
+    margin-left: 275px;
 }
 
 .rightanchor2{
@@ -74,11 +79,12 @@ a:hover {
     text-decoration: none;
     font-weight: 500;
     font-size: 22px;
-    margin-left: 350px;
+    margin-left: 275px;
 }
 
 .robot{
     margin-top: 360px;
+    margin-left: 50px;
 }
 
 .leftanchor{
@@ -86,6 +92,7 @@ a:hover {
     text-decoration: none;
     font-weight: 500;
     font-size: 22px;
+    margin-left:90px;
 }
 
 .level{
@@ -93,7 +100,8 @@ a:hover {
 }
 
 .comedy{
-    margin-top: 270px;
+    margin-top: 330px;
+    margin-left: 50px;
 }
 
 .bottom{
