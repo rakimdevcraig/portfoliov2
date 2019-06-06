@@ -130,3 +130,27 @@ img{
 .bottomlist{
     list-style: none
 }
+
+/*Particles8*/ 
+
+
+#stage {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#text {
+	color: #fff;
+	position: absolute;
+	right: 50px;
+	z-index: 2;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	font-size: 2em;
+}
