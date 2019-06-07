@@ -1,14 +1,14 @@
-var MathHelper = {
+let MathHelper = {
 	randomRange: function (min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 };
 
-var Particles = (function () {
+let Particles = (function () {
 
-	var list = [];
+	let list = [];
 
-	var Particle = function (x, y, size, xSpeed, ySpeed, life, opacity) {
+	let Particle = function (x, y, size, xSpeed, ySpeed, life, opacity) {
 
 		this.x = x;
 		this.y = y;
@@ -58,20 +58,20 @@ var Particles = (function () {
 		}
 	}
 
-	var createNew = function (x, y, size, xSpeed, ySpeed, life, opacity) {
+	let createNew = function (x, y, size, xSpeed, ySpeed, life, opacity) {
 
-		var particle = new Particle(x, y, size, xSpeed, ySpeed, life, opacity);
+		let particle = new Particle(x, y, size, xSpeed, ySpeed, life, opacity);
 		list.push(particle);
 		return particle;
 	};
 
-	var animate = function () {
+	let animate = function () {
 		
-		var i = list.length;
+		let i = list.length;
 
 		while (i--) {
 
-			var particle = list[i];
+			let particle = list[i];
 
 			particle.life--;
 
@@ -115,14 +115,16 @@ var Particles = (function () {
 
 })();
 
-var Stage = (function () {
+let Stage = (function () {
 
-	var stage = document.getElementById('stage');
+	let stage = document.getElementById('stage');
 
-	var addChild = function (thing) {
+	let addChild = function (thing) {
 
 		stage.appendChild(thing.element);
 	};
+
+
 
 	return {
 		addChild: addChild
@@ -130,11 +132,13 @@ var Stage = (function () {
 
 })();
 
-var Renderer = (function () {
 
-	var frameNumber = 0;
 
-	var render = function (callback, fps) {
+let Renderer = (function () {
+
+	let frameNumber = 0;
+
+	let render = function (callback, fps) {
 
 		fps = fps || 30;
 
@@ -150,7 +154,7 @@ var Renderer = (function () {
 		}, 1000 / fps);
 	};
 
-	var getFrameNumber = function () {
+	let getFrameNumber = function () {
 
 		return frameNumber;
 	};
@@ -164,7 +168,7 @@ var Renderer = (function () {
 
 Renderer.render(function () {
 
-	var density = 30,
+	let density = 30,
 		speed = 1;
 
 	while(density--) {
